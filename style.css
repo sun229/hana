@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --pink:#e84393;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.btn:hover {
+  background: var(--pink);
+}
+
+.sec-title {
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: #fde8f2;
+  margin: 30px 0 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+header {
+  padding: 0 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 300;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  color: #000;
+}
+
+header nav a {
+  margin-right: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+header nav a:hover {
+  color: var(--pink);
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+header ul a {
+  font-size: 24px;
+  color: #333;
+}
+
+header ul a:hover {
+  color: var(--pink);
+}
+
+header ul a:nth-child(2) {
+  margin-left: 25px;
+}
+
+#home {
+  background: url(images/home-bg.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .home-text {
+  max-width: 36rem;
+}
+
+#home .home-text h1 {
+  font-size: 4rem;
+}
+
+#home .home-text h2 {
+  color: var(--pink);
+}
+
+#about .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .about-flex img {
+  width: 48%;
+  border-radius: .5rem;
+}
+
+#about .about-flex .about-content {
+  width: 48%;
+  margin-top: 4%;
+}
+
+.icons-container {
+  background-color: #ececec;
+}
+
+.icons-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+}
+
+.icons-container ul li {
+  background-color: #fff;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+#flowers .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#flowers .box {
+  border: 1px solid #e6e5e5;
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  width: 21%;
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#flowers .box:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#flowers .box .add-cart {
+  background-color: #ececec;
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  right: 5px;
+  padding: 7px;
+  border-radius: 15%;
+  font-size: 18px;
+}
+
+#flowers .box .add-cart:hover a {
+  color: var(--pink);
+}
+
+#flowers .box .add-cart a {
+  color: #000;
+}
+
+#flowers .box img {
+  max-width: 60%;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#flowers .box span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #fdebff;
+  padding: 5px 8px;
+  border-radius: 15%;
+  color: var(--pink);
+  z-index: 100;
+}
+
+#flowers .box .box-text .price {
+  color: var(--pink);
+}
+
+#review .review-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#review .review-container .review-box {
+  width: 31%;
+  margin: 10px;
+  border: 1px solid #e6e5e5;
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 30px 15px;
+}
+
+#review .review-container .review-box .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .contact-flex form {
+  width: 46%;
+  padding: 1.5rem 2rem;
+  border: 1px solid #e6e5e5;
+  -webkit-box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+#contact .contact-flex form .box {
+  width: 95%;
+  padding: 0.5rem;
+  color: #333;
+  text-transform: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  outline: none;
+  margin: .5rem 0;
+}
+
+#contact .contact-flex form .box:focus {
+  border-color: var(--pink);
+}
+
+#contact .contact-flex .contact-image {
+  width: 46%;
+}
+
+#contact .contact-flex .contact-image img {
+  max-width: 100%;
+  border-radius: .5rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  border-top: 1px solid #ececec;
+  padding-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .icons-container ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .icons-container ul li {
+    width: 45%;
+  }
+  .icons-container ul li:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+  #flowers .box {
+    width: 48%;
+  }
+  #review .review-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #review .review-container .review-box {
+    width: 100%;
+  }
+  #contact .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .contact-flex form {
+    width: 70%;
+  }
+  #contact .contact-flex .contact-image {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 0 2%;
+  }
+  header nav a {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  header ul a {
+    font-size: 20px;
+  }
+  #about .about-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .about-flex img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #about .about-flex .about-content {
+    width: 100%;
+  }
+  .icons-container ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .icons-container ul li {
+    width: 100%;
+  }
+  .icons-container ul li:nth-child(-n+3) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+  header {
+    padding: 0 2% 3%;
+  }
+  header nav {
+    position: absolute;
+    bottom: 4%;
+  }
+  header ul {
+    display: none;
+  }
+  #flowers .box {
+    width: 100%;
+  }
+  #contact .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact .contact-flex form {
+    width: 80%;
+  }
+  .sec-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  header nav a {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
